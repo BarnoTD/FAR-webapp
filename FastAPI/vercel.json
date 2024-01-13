@@ -1,11 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "main.py",
-        "use": "@now/python"
-      }
-    ],
     "functions": {
         "api": {
           "runtime": "python3.9"
