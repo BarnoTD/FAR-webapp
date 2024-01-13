@@ -10,7 +10,7 @@ app = FastAPI() #initialize main app
 
 #Handle Cross-Origin Resource Sharing
 origins = [
-    "http://localhost:3000",
+    "https://finance-app-tawny.vercel.app/",
 ]
 
 app.add_middleware(
