@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "main.py",
+        "use": "@now/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/transactions/(.*)",
+        "dest": "/main.py"
+      },
+      {
+        "src": "/(.*)",
+        "status": 404,
+        "dest": "/404.html"
+      }
+    ]
+  }
+  
