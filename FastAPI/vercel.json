@@ -6,6 +6,11 @@
         "use": "@now/python"
       }
     ],
+    "functions": {
+        "api": {
+          "runtime": "python3.9"
+        }
+      },
     "routes": [
       {
         "src": "/transactions/(.*)",
