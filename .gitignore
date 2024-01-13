@@ -1,0 +1,8 @@
+# .gitignore
+__pycache__/
+env/
+React/finance-app/node_modules/
+React/finance-app/build/
+*.pyc
+*.pyo
+*.pyd
