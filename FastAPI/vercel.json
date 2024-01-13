@@ -2,19 +2,18 @@
     "version": 2,
     "functions": {
         "api": {
-          "runtime": "python3.9"
+            "runtime": "python@3.9"
         }
-      },
+    },
     "routes": [
-      {
-        "src": "/transactions/(.*)",
-        "dest": "/main.py"
-      },
-      {
-        "src": "/(.*)",
-        "status": 404,
-        "dest": "/404.html"
-      }
+        {
+            "src": "/transactions/(.*)",
+            "dest": "/main.py"
+        },
+        {
+            "src": "/(.*)",
+            "status": 404,
+            "dest": "/404.html"
+        }
     ]
-  }
-  
+}
