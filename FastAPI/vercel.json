@@ -2,7 +2,7 @@
     "version": 2,
     "functions": {
       "api": {
-        "includeFiles": ["main.py", "database.py", "models.py"]
+        "includeFiles": ["main.py"]
       }
     },
     "routes": [
