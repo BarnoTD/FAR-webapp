@@ -10,7 +10,7 @@ app = FastAPI() #initialize main app
 
 #Handle Cross-Origin Resource Sharing
 origins = [
-    "https://finance-app-tawny.vercel.app",
+    "http://localhost:3000",
 ]
 
 app.add_middleware(
@@ -46,6 +46,10 @@ def get_db():
 db_dependency = Annotated[Session, Depends(get_db)]
 
 models.Base.metadata.create_all(bind=engine)
+
+@app.get("/")
+async def root():
+    return {"message": "Hello. You might want to check SWAGGER. If so go to http://localhost:8000/docs"}
 
 # Update Transaction
 @app.post("/transactions/", response_model=TransactionModel)
