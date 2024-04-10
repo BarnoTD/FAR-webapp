@@ -20,13 +20,13 @@ This is a basic Financial Transaction Tracker Web Application built using FastAP
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/financial-transaction-tracker.git
+   git clone https://github.com/BarnoTD/FAR-webapp
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd financial-transaction-tracker
+   cd FAR-webapp
    ```
 
 3. Install backend dependencies:
